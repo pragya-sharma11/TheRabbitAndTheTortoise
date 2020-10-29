@@ -30,7 +30,7 @@ public class Tortoise extends Thread {
             }
             if (index != 4) {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(3000L);
                 } catch (InterruptedException e) {
                     System.err.println(e.getMessage());
                 }
