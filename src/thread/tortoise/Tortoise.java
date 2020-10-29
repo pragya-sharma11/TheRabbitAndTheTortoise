@@ -36,11 +36,6 @@ public class Tortoise extends Thread {
                 }
             }
         }
-        JOptionPane.showMessageDialog(
-                null,
-                "The Tortoise has Completed The Race!!!",
-                "Tortoise",
-                JOptionPane.PLAIN_MESSAGE
-        );
+        JOptionPane.showMessageDialog(null, "The Tortoise has Completed The Race!!!", "Tortoise", JOptionPane.PLAIN_MESSAGE);
     }
 }
