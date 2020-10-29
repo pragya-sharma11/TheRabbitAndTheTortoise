@@ -1,5 +1,7 @@
 package thread.tortoise;
 
+import javax.swing.*;
+
 public class Tortoise extends Thread {
     public Tortoise() {
         super("Tortoise");
@@ -32,5 +34,11 @@ public class Tortoise extends Thread {
                 }
             }
         }
+        JOptionPane.showMessageDialog(
+                null,
+                "The Tortoise has Completed The Race!!!",
+                "Tortoise",
+                JOptionPane.PLAIN_MESSAGE
+        );
     }
 }
