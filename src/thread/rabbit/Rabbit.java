@@ -42,10 +42,12 @@ public class Rabbit implements Runnable {
                     System.out.println("The Rabbit has reached the finish line!");
                     break;
             }
-            try {
-                Thread.sleep(1500L);
-            } catch (InterruptedException e) {
-                System.err.println("The rabbit has lost the path!");
+            if (index != 4) {
+                try {
+                    Thread.sleep(1500L);
+                } catch (InterruptedException e) {
+                    System.err.println("The rabbit has lost the path!");
+                }
             }
         }
         JOptionPane.showConfirmDialog(
