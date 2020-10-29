@@ -3,10 +3,12 @@ package thread.tortoise;
 import javax.swing.*;
 
 public class Tortoise extends Thread {
+    private final int MILESTONE = 5;
+
     public Tortoise() {
         super("Tortoise");
     }
-    private final int MILESTONE=5;
+
     public void run() {
         for (int index = 0; index < MILESTONE; index++) {
             switch (index) {
@@ -26,7 +28,7 @@ public class Tortoise extends Thread {
                     System.out.println("The Tortoise is at Finish line");
                     break;
             }
-            if (index !=4){
+            if (index != 4) {
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
