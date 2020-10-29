@@ -24,6 +24,13 @@ public class Tortoise extends Thread {
                     System.out.println("The Tortoise is at Finish line");
                     break;
             }
+            if (index !=4){
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    System.err.println(e.getMessage());
+                }
+            }
         }
     }
 }
